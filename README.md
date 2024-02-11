@@ -48,6 +48,46 @@ This mini project implements an Online Voting System using Socket Programming. T
 - User ID
 - Choice ID
 
+Certainly! Here's how you can structure the SQL tables in your `readme.md`:
+
+# Database Schema
+
+## User data Table
+
+| Field      | Type         | Description           |
+|------------|--------------|-----------------------|
+| User ID    | STR          | Unique user identifier|
+| Username   | STR  | User's username       |
+| Password   | STR  | User's password       |
+
+## Poll Table
+
+| Field          | Type         | Description                  |
+|----------------|--------------|------------------------------|
+| Poll ID        | STR          | Unique poll identifier       |
+| Poll Description | STR | Description of the poll      |
+| Owner ID       | STR          | User ID of the poll owner    |
+| Status         | STR  | Poll status (opened/closed)  |
+| Open Date      | DATETIME     | Scheduled opening date       |
+| Close Date     | DATETIME     | Scheduled closing date       |
+
+## Poll Options Table
+
+| Field          | Type         | Description                  |
+|----------------|--------------|------------------------------|
+| Poll ID        | STR          | Poll identifier             |
+| Choice ID      | STR          | Unique choice identifier     |
+| Choice Description | STR | Description of the choice  |
+
+## Poll Selection Table
+
+| Field          | Type         | Description                  |
+|----------------|--------------|------------------------------|
+| Poll ID        | STR          | Poll identifier             |
+| User ID        | STR          | User identifier             |
+| Choice ID      | STR          | Selected choice identifier  |
+
+
 ### Message Types
 
 - create_user
@@ -59,4 +99,11 @@ This mini project implements an Online Voting System using Socket Programming. T
 - delete_choice (admin)
 - poll_selection (user)
 - logout_user
+
+### Message Format
+
+
+|  |  |  |
+|-------------------|-------------------|-------------------|
+| MESSAGE TYPE            | REQ/RESP            | ---MESSAGE DATA---            |
 
