@@ -48,8 +48,6 @@ This mini project implements an Online Voting System using Socket Programming. T
 - User ID
 - Choice ID
 
-Certainly! Here's how you can structure the SQL tables in your `readme.md`:
-
 # Database Schema
 
 ## User data Table
