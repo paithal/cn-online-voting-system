@@ -17,4 +17,3 @@ pprint.pprint(cur.fetchall())
 cur = conn.execute('select * from user_poll_selection_table')
 print('user_poll_selection_table : ')
 pprint.pprint(cur.fetchall())
-
